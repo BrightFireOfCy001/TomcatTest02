@@ -1,0 +1,6 @@
+---
+applications:
+- name: TomcatTest02
+  memory: 512M
+  host: TomcatTest02
+  domain: au-syd.mybluemix.net
