@@ -10,5 +10,6 @@
 	<a href="./ppp.pv">Test Servlet 01</a>
 	<p>多语言测试</p>
 	<p>多言語テスト</P>
+	<p>multi-language test</p>
 </body>
 </html>
