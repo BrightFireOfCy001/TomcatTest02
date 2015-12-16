@@ -1,0 +1,467 @@
+/*******************************************************************************
+ * Licensed Materials - Property of IBM
+ * (c) Copyright IBM Corporation 2014. All Rights Reserved.
+ * 
+ * Note to U.S. Government Users Restricted Rights:
+ * Use, duplication or disclosure restricted by GSA ADP Schedule
+ * Contract with IBM Corp.
+ *******************************************************************************/
+
+#navbar {
+	background: #26343f ;
+	height: 50px;
+	line-height: 50px;
+	font-weight: 300;
+	font-size: 9pt;
+	z-index: 150;
+	min-width: 980px;
+	border-bottom: 1px solid #34534b;
+}
+
+#navbar .nb-area {
+	position: relative;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+#navbar .nb-button-link-wrapper{
+	position: relative;
+}
+
+#navbar .nb-button-link {
+	position:relative;
+	text-decoration: none;
+	color: #94a3ab;
+	margin: 0 10px 0 10px;
+	height: 50px;
+	/*For SVG icon*/
+	stroke: #94a3ab;
+	fill: #94a3ab;	
+}
+
+#navbar .nb-button-link:hover {
+	color: #FFFFFF;
+	/*For SVG icon*/
+	stroke: #FFFFFF;
+	fill: #FFFFFF;
+}
+
+#navbar .nb-button-link .notification-svg-icon{
+	height:24px;
+	position:relative;
+	top:6px;
+}
+
+#navbar .nb-selected {
+	color: #FFFFFF;
+	border-bottom: 4px solid #189f89;
+	padding-bottom: 14px;
+}
+
+#navbar .nb-nav-entry-text {
+	text-transform: uppercase;
+}
+
+#navbar .nb-nav-notification-bubble{
+	left:12px;
+	top: 6px;
+	padding:3px 4px;
+	position:absolute;
+	line-height: 12px;
+	font-size:12px;
+	border-radius:3px;
+	background-color:#E02424;
+	color:white;
+	display:none;
+}
+
+#navbar .nb-button-link .nb-menu-caret {
+    position: relative;
+    display: inline-block;
+    height: 8px;
+    padding-left: 3px;
+    margin-right: 20px;
+}
+
+#navbar .nb-button-link .nb-menu-caret:before,
+#navbar .nb-button-link .nb-menu-caret:after{
+    position: absolute;
+    display: inline-block;
+    content: "";
+    border: 6px solid transparent;
+}
+
+#navbar .nb-button-link .nb-menu-caret:before{
+    top: 0;
+    border-top-color: #94a3ab;
+}
+
+#navbar .nb-button-link .nb-menu-caret:after{
+    top: -2px;
+    border-top-color: #26343f;
+}
+
+#navbar .nb-button-link:hover .nb-menu-caret:before,
+#navbar .nb-selected .nb-menu-caret:before {
+    border-top-color: #1bb199;
+}
+
+#navbar .nb-signup-button {
+	border: 1px solid;
+	border-radius: 3px;
+	padding: 5px 12px;
+	margin: 0 10px 0 10px;
+	font-weight: 600;
+	border-color: #1bb199;
+	color: #1bb199;
+	text-decoration: none;
+}
+
+#navbar .nb-signup-button:hover {
+	color: #152934;
+  	background-color: #1bb199;
+  	border: 1px solid #1bb199;
+}
+
+#navbar .nb-login-button {
+	border: 1px solid;
+	border-radius: 3px;
+	padding: 5px 12px;
+	margin: 0 10px 0 0px;
+	font-weight: 600;
+	border-color: #94a3ab;
+	color: #94a3ab;
+	text-decoration: none;
+}
+
+#navbar .nb-login-button:hover {
+	color: #152934;
+  	background-color: #94a3ab;
+  	border: 1px solid #94a3ab;
+}
+
+
+/* Left Area ------------------------------------------------------------------------------------- */
+
+#navbar .nb-left-area {
+	float: left;
+	height: 50px;
+}
+
+#navbar .nb-left-area .nb-bluemix-logo {
+	vertical-align: top;
+	margin-top: 8px;
+	width: 32px;
+	height: 32px;
+}
+
+#navbar .nb-bluemix-logo-image {
+	background-image: url("../../graphics/header/bluemix-logo.png");
+	background-position: 1px 1px;
+	width: 32px;
+	height: 32px;
+}
+
+#navbar .nb-left-area .nb-devopsservices-text {
+	font-weight: 300;
+	margin: 0 0 0 20px;
+	font-size: 14px;
+	color:#FFFFFF;
+}
+
+#navbar .nb-left-area .nb-bluemix-text {
+	font-weight: bold;
+	/* margin: 0 0 0 5px; */
+	font-size: 14px;
+	color:#FFFFFF;
+}
+
+#navbar .nb-left-area .current-page{
+	color:#F47D64;
+	font-weight:bold;
+}
+
+/* Right Area ------------------------------------------------------------------------------------ */
+
+#navbar .nb-right-area {
+	float: right;
+	height: 50px;
+	letter-spacing: 0.06em;
+}
+
+#navbar .nb-right-area .nb-dw  {
+	border-left: 1px solid #3C5364;
+	padding: 0 20px 0 20px;
+	margin-right: 0;
+	line-height: 47px;
+}
+
+#navbar .nb-right-area .nb-letter-d {
+	font-size: 18px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+#navbar .nb-right-area .nb-letter-w {
+	font-size: 18px;
+	color: #F19027;
+	font-weight: bold;
+}
+
+/* Menu ------------------------------------------------------------------------------------- */
+
+#navbar .nb-drop-menu {
+	position: absolute;
+	font-size: 12px;
+	background-color: #26343f;
+	/*border: 1px solid #BBBBBB;*/
+	-webkit-box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, .2);
+	box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, .2);
+	border-collapse: separate;
+	border-radius: 1px;
+	z-index: 550;
+	min-width: 120px;
+	padding: 0px 0px 5px 0px;
+	display: none;
+	margin-right: 23px;
+}
+
+#navbar .nb-drop-menu:before {
+	border-width: 0 6px 6px;
+	top: -5px;
+	right: 124px;
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-color: #1b252d transparent;
+	display: block;
+	width: 0;
+	z-index: 0;
+}
+
+#navbar .nb-drop-menu:after {
+	border-width: 0 6px 6px;
+	top: -6px;
+	right: 124px;
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-color: #1b252d transparent;
+	display: block;
+	width: 0;
+	z-index: 1;
+}
+
+#navbar .nb-drop-menu .nb-first-menu-entry {
+	display: block;
+	padding: 1px 20px 1px 25px;
+	line-height: 33px;
+	text-decoration: none;
+	background-color: #1b252d;
+	color: #B3B3B3;
+	/*border-left: 6px solid white;*/
+	text-transform: uppercase;
+	width: 190px;
+}
+
+#navbar .nb-drop-menu .nb-menu-entry {
+	display: block;
+	padding: 1px 20px 1px 25px;
+	line-height: 24px;
+	text-decoration: none;
+	color: #B3B3B3;
+	/*border-left: 6px solid white;*/
+	text-transform: uppercase;
+}
+
+#navbar .nb-help-menu {
+	right: -115px;
+}
+#navbar .nb-notification-panel{
+	right:-29px;
+}
+
+#navbar .nb-drop-menu .nb-menu-entry:hover,
+#navbar .nb-drop-menu .nb-first-menu-entry:hover {
+	/*background-color: #FEF6F4;
+	border-left: 6px solid #f47d64;*/
+	color: #FFFFFF;
+	/*For SVG icon*/
+	stroke: #FFFFFF;
+	fill: #FFFFFF;
+}
+
+#navbar .nb-drop-menu hr {
+	border: 0;
+	margin: 6px 0 6px 0;
+	padding: 0;
+	height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);	
+}
+
+/* User Profile menu --------------------------------------------------------------------------- */
+#navbar .nb-profile-icon {
+	vertical-align: top;
+	margin-top: 12px;
+	margin-right: 5px;
+	width: 20px;
+	height: 25px;
+	background-image: url('./grey_icon.png');
+}
+
+#navbar .nb-profile-icon:hover {
+	background-image: url('../../graphics/header/blue_icon.png');
+}
+
+#navbar .nb-user-drop-menu {
+	position: absolute;
+	font-size: 14px;
+	background-color: #26343f;
+	/*border: 1px solid #BBBBBB;*/
+	-webkit-box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, .2);
+	box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, .2);
+	border-collapse: separate;
+	border-radius: 1px;
+	z-index: 600;
+	min-width: 120px;
+	padding: 0px 0px 5px 0px;
+	display: none;
+	letter-spacing: 0em;
+}
+
+#navbar .nb-user-drop-menu:before {
+	border-width: 0 6px 6px;
+	top: -6px;
+	right: 20px;
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-color: #1b252d transparent;
+	display: block;
+	width: 0;
+	z-index: 0;
+}
+
+#navbar .nb-user-drop-menu:after {
+	border-width: 0 6px 6px;
+	top: -6px;
+	right: 20px;
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-color: #1b252d transparent;
+	display: block;
+	width: 0;
+	z-index: 1;
+}
+
+#navbar .nb-user-drop-menu .nb-user-drop-menu-title {
+	display: block;
+	padding: 1px 20px 1px 25px;
+	line-height: 33px;
+	background-color: #1b252d;
+	font-size: 12px;
+	color: #B3B3B3;
+	text-transform: uppercase;
+	text-decoration: none;
+	width: 320px;
+}
+
+#navbar .nb-user-drop-menu .nb-user-drop-menu-entry {
+	display: block;
+	padding: 15px 20px 1px 25px;
+	line-height: 24px;
+	text-decoration: none;
+	color: #FFFFFF;
+	margin-bottom: -10px;
+}
+
+#navbar .nb-user-drop-menu-link-container {
+	margin-top: -10px;
+	padding-left: 25px;
+}
+
+#navbar .nb-user-drop-menu-link {
+	color: #94a3ab;
+	text-decoration: none;
+}
+
+#navbar .nb-user-drop-menu-link:hover {
+	color: #FFFFFF;
+}
+
+#navbar .nb-user-drop-menu-link-separator {
+	padding-left: 5px;
+	padding-right: 5px;
+	color: #B3B3B3;
+}
+
+#navbar .nb-user-drop-menu {
+	right: 0px;
+}
+
+#navbar .nb-user-drop-menu .nb-menu-entry:hover,
+#navbar .nb-user-drop-menu .nb-first-menu-entry:hover {
+	/*background-color: #FEF6F4;
+	border-left: 6px solid #f47d64;*/
+	color: #FFFFFF;
+	/*For SVG icon*/
+	stroke: #FFFFFF;
+	fill: #FFFFFF;
+}
+
+#navbar .nb-user-drop-menu hr {
+	border: 0;
+	margin: 6px 0 6px 0;
+	padding: 0;
+	height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);	
+}
+
+#navbar .nb-user-mouseover-menu {
+	display: none;
+	font-size: 12px;
+	font-weight: 400;
+	position: absolute;
+	white-space: nowrap;
+	background: #3b4b54;
+	color: #FFF;
+	line-height: 20px;
+	padding: 12px 15px;
+	border: 1px solid #aeb5b8;
+	right: 2.5px;
+	z-index: 999;
+}
+
+#navbar .nb-user-mouseover-menu:before {
+	border-bottom: 6px solid #3b4b54;
+    border-left: 6px solid transparent;
+    border-right:6px solid transparent;
+	top: -4px;
+	right: 15px;
+	content: '';
+	background: transparent;
+	position: absolute;
+	display: block;
+	width: 0;
+	height: 0;
+	z-index: 1;
+}
+
+#navbar .nb-user-mouseover-menu:after {
+	border-bottom: 6px solid #aeb5b8;
+    border-left: 6px solid transparent;
+    border-right:6px solid transparent;
+	top: -6px;
+	right: 15px;
+	content: '';
+	background: transparent;
+	position: absolute;
+	display: block;
+	width: 0;
+	height: 0;
+	z-index: 0;
+}
