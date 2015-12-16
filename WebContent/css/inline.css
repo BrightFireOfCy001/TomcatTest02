@@ -1,0 +1,150 @@
+
+.editorTheme .annotationLine.currentLine {
+	background-color: #3B4B53;
+}
+.editorTheme .annotationRange.currentBracket {
+	background-color: #006E00;
+}
+.editorTheme .annotationRange.currentSearch {
+	background-color: #5d5d5d;
+}
+.editorTheme .annotationRange.matchingBracket {
+	background-color: #006E00;
+}
+.editorTheme .annotationRange.matchingSearch.currentSearch {
+	background-color: #465e47;
+}
+.editorTheme .annotationRange.matchingSearch {
+	background-color: #363636;
+}
+.editorTheme .annotationRange.writeOccurrence {
+	background-color: #093f59;
+}
+.editorTheme .comment {
+	color: #93A2AA;
+}
+.editorTheme .constant {
+	color: #F47D64;
+}
+.editorTheme .entity.name.function {
+	color: #67BBB8;
+	font-weight: bold;
+}
+.editorTheme .entity.name {
+	color: #98937B;
+}
+.editorTheme .entity.other.attribute-name {
+	color: #01B199;
+}
+.editorTheme .keyword.control {
+	color: #FCD600;
+	font-weight: bold;
+}
+.editorTheme .keyword.operator {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.editorTheme .keyword.other.documentation.task {
+	color: #8db6f1;
+}
+.editorTheme .keyword.other.documentation {
+	color: #7F9FBF;
+}
+.editorTheme .markup.bold {
+	font-weight: bold;
+}
+.editorTheme .markup.heading {
+	color: #91c23d;
+}
+.editorTheme .markup.italic {
+	font-style: italic;
+}
+.editorTheme .markup.list {
+	color: #CC4C07;
+}
+.editorTheme .markup.other.separator {
+	color: #e8d075;
+}
+.editorTheme .markup.other.strikethrough {
+	text-decoration: line-through;
+}
+.editorTheme .markup.other.table {
+	color: #3C802C;
+}
+.editorTheme .markup.quote {
+	color: #446FBD;
+}
+.editorTheme .markup.raw.html {
+	background-color: #696969;
+	color: white;
+}
+.editorTheme .markup.raw {
+	font-family: monospace;
+}
+.editorTheme .markup.underline.link {
+	text-decoration: underline;
+}
+.editorTheme .meta.documentation.annotation {
+	color: #7F9FBF;
+}
+.editorTheme .meta.documentation.tag {
+	color: #7F7F9F;
+}
+.editorTheme .meta.preprocessor {
+	color: #A4A4A4;
+}
+.editorTheme .meta.tag {
+	color: #8781BD;
+}
+.editorTheme .punctuation.operator {
+	color: #FF8C00;
+}
+.editorTheme .ruler {
+	background-color: #1A252D;
+}
+.editorTheme .rulerLines {
+	color: #93A2AA;
+}
+.editorTheme .string.interpolated {
+	color: #dadada;
+}
+.editorTheme .string {
+	color: #01B199;
+}
+.editorTheme .support.type.propertyName {
+	color: #FFFFFF;
+}
+.editorTheme .textviewContent ::-moz-selection {
+	background-color: rgba(16,106,91,0.99);
+}
+.editorTheme .textviewContent ::selection {
+	background-color: rgba(16,106,91,0.99);
+}
+.editorTheme .textviewLeftRuler {
+	border-right: 1px solid #424C53;
+}
+.editorTheme .textviewRightRuler {
+	border-left: 1px solid #424C53;
+}
+.editorTheme .textviewSelection {
+	background-color: rgba(16,106,91,0.99);
+}
+.editorTheme .textviewSelectionUnfocused {
+	background-color: rgba(16,106,91,0.99);
+}
+.editorTheme .variable.language {
+	color: #8781BD;
+	font-weight: bold;
+}
+.editorTheme .variable.other {
+	color: #E038AD;
+}
+.editorTheme .variable.parameter {
+	color: #D1416F;
+}
+.editorTheme.textview {
+	background-color: #1A252D;
+	color: #07ADCF;
+	font-family: "Consolas", "Monaco", "Vera Mono", monospace;
+	font-size: 12px;
+}
